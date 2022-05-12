@@ -15,15 +15,15 @@ let adventurous = true
 
 let favFood = "Pasta"
 
-let pets = 0
+let myPets = 0
 
 let friendsPets = 1
  
-console.log(pets);
+console.log(myPets);
 
-pets += 2
+myPets += 2
 
-console.log(pets);
+console.log(myPets);
 
 const allowedPets = 2
 
@@ -33,25 +33,21 @@ if (adventurous == true) {
     console.log("How about we stay home?");
 }
 
-if (luckyNumber ==5 && adventurous) {
+if (luckyNumber ==5 && adventurous == true) {
     console.log('Roll the dice!');
 } else {
     console.log("Don't roll");
 }
 
-if (pets<allowedPets) {
+if (myPets<allowedPets) {
     console.log("I can have more pets");
-} else if (pets == allowedPets) {
+} else if (myPets == allowedPets) {
     console.log("I have enough pets.");
 }
-else { (pets>allowedPets) 
+else { (myPets>allowedPets) 
     console.log("Oh no, I have too many pets!");    
-}  
-// 15 - Write a conditional that console logs "I can have more pets!" 
-//if the value of `pets` is less than the value of `allowedPets`,
-// console logs "I have enough pets" if the value of `pets` is equal to the value of `allowedPets`,
-// and console logs "Oh no, I have too many pets!"
-// if the value of `pets` is greater than the value of `allowedPets`.
+}
+
 
 // STRETCH GOALS:
 
@@ -60,6 +56,16 @@ else { (pets>allowedPets)
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios. 
 // console.log `mostPets` after the conditional has run.
+
+var mostPets
+
+if (myPets > friendsPets) {
+    mostPets = myPets
+} else {
+    mostPets = friendsPets
+}
+
+console.log(mostPets);
 
 // 17 - Write a *switch* statement that logs:
 //      "First is the worst" if your lucky number is 1
