@@ -18,7 +18,12 @@ let favFood = "Pasta"
 let pets = 0
 
 let friendsPets = 1
+ 
+console.log(pets);
 
+pets += 2
+
+console.log(pets);
 
 
 // 7 - Create a variable named `adventurous` and set it to a boolean value (true or false)
