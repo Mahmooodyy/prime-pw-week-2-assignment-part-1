@@ -7,7 +7,9 @@ let fullName = firstName + lastName
 
 console.log (fullName);
 
+let luckyNumber = 5
 
+console.log ('My name is ', fullName, 'and I think the number', luckyNumber, 'is a winner!' );
 
 // 7 - Create a variable named `adventurous` and set it to a boolean value (true or false)
 
